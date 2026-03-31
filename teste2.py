@@ -1,0 +1,25 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+navegador = webdriver.Chrome()
+time.sleep(1)
+navegador.maximize_window()
+time.sleep(1)
+navegador.get("https://game-selenium.netlify.app/missao2/missao2.html")
+time.sleep(1)
+navegador.find_element(By.ID, "olaf1").click()
+time.sleep(0.67)
+navegador.find_element(By.ID, "olaf2").click()
+time.sleep(0.67)
+navegador.find_element(By.ID, "olaf3").click()
+time.sleep(0.67)
+navegador.find_element(By.ID, "olaf4").click()
+time.sleep(0.67)
+navegador.find_element(By.ID, "olaf5").click()
+time.sleep(0.67)
+navegador.find_element(By.ID, "missao2").click()
+time.sleep(0.67) 
+botao = navegador.find_element(By.CSS_SELECTOR, "button[onclick='proxima()']")
+botao.click()
+time.sleep(5.67)
